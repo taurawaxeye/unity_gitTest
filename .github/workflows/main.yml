@@ -26,8 +26,10 @@ jobs:
       - name: slack comm
         uses: slackapi/slack-github-action@v1.15.0
         with: 
-          channel-id: test
+          channel-id: C026QTC744R
           slack-message : dummy build has started
+        env:
+          SLACK_BOT_TOKEN: xoxb-41508692129-2654099328932-3mLGDzIC4f0sMuDYX5rJRDFt
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
